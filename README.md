@@ -5,11 +5,5 @@ In this project, we predict all the genres (up to 27 genres) that a movie can be
 
 
 Notice the common words used in describing the plots for different genres - `murder, kill, victim, death` for Thriller and `team, game, vs, match` for Sports (as one would expect) 
-<div class="row">
-  <div class="column">
-    <img width=400 src="./Images/results/wordcloud_Thriller.png">
-  </div>
-  <div class="column">
-    <img width=400 src="./Images/results/wordcloud_Sport.png">
-  </div>
-</div>
+<img height=400 src="./Images/results/wordcloud_Thriller_Sports.png"/>
+
