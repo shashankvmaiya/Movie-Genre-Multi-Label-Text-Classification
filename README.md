@@ -5,5 +5,5 @@ In this project, we predict all the genres (up to 27 genres) that a movie can be
 
 
 Notice the common words used in describing the plots for different genres - `murder, kill, victim, death` for Thriller and `team, game, vs, match` for Sports (as one would expect) 
-<img height=400 src="./Images/results/wordcloud_Thriller_Sports.png"/>
+<img src="./Images/results/wordcloud_Thriller_Sports.png"/>
 
