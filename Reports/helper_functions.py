@@ -8,7 +8,7 @@ import re
 import os.path
 import math
 from sklearn.model_selection import StratifiedShuffleSplit
-from sklearn.cross_validation import KFold
+#from sklearn.cross_validation import KFold
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
 from sklearn.svm import LinearSVC
@@ -19,7 +19,7 @@ from scipy import sparse
 from sklearn.metrics import make_scorer
 from sklearn.metrics import f1_score
 from sklearn.linear_model import LogisticRegression
-from skmultilearn.problem_transform import LabelPowerset
+#from skmultilearn.problem_transform import LabelPowerset
 from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 from sklearn.ensemble import RandomForestClassifier
