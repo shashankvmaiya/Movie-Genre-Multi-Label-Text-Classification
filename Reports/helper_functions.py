@@ -182,7 +182,10 @@ def multi_class_predict(clf, X_test, class_to_genre_map):
     Predictions made by classifiers are labels ranging from 0 to num_class
     class_to_genre_map maps the labels to genre combination
     '''
-    y_pred = pd.DataFrame(index=X_test.index, columns=class_to_genre_map.columns)
+    if isinstance(test_X, pd.Series):
+        y_pred = pd.DataFrame(index=X_test.index, columns=class_to_genre_map.columns)
+    else:
+        y_pred = pd.DataFrame(index=range(X_test.shape[0]), columns=class_to_genre_map.columns)
     
     num_class = class_to_genre_map.shape[0]
     y_class = clf.predict(X_test)
