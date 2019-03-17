@@ -11,9 +11,9 @@ The word cloud plots for genres give ideas on the commonly used words used while
 Few techniques used to classify the movies into various plots
 * **Binary Relevance**: This consists of fitting one classifier per class. For each classifier, the class is fitted against all the other classes - hence n_classes classifiers are needed. The union of all classes that were predicted is taken as the multi-label output.
 
-* **Label Powerset**: In this approach, we transform the multi-label problem to a multi-class problem with 1 multi-class classifier trained on all unique label (genre) combinations found in the training data. Each plot in the test data set is classified into one of these unique combination. Worst case, there can be $2^n$ classes where n = number of genres.  
+* **Label Powerset**: In this approach, we transform the multi-label problem to a multi-class problem with 1 multi-class classifier trained on all unique label (genre) combinations found in the training data. Each plot in the test data set is classified into one of these unique combination. Worst case, there can be 2^num_genres classes 
 
-* **Label Powerset with Clustering**: Since $2^n$ can get exponentially high with the number of genres, here we use clustering technique to reduce the number of possible classes into a manageable number. 
+* **Label Powerset with Clustering**: Since 2^num_genres can get exponentially high with the number of genres, here we use clustering technique to reduce the number of possible classes into a manageable number. 
 
 * **Sentence Embedding**: Using Transfer Learning techniques and Googles Universal Sentence Encoder, every plot is converted into a 512 length vector. This embedding vector is used to train models and make predictions. Below scatter plot shows the embedded vectors for `Western, Sports` and `Musical` genres where each point corresponds to a 512 length vector (representing one movie plot) which is reduced to 2-D via PCA for visualization. We can see clearly see how these 3 genres have been clustered separately indicating that the theme of the plots for these genres are significantly different
 
