@@ -17,7 +17,7 @@ MarkupSafe==0.23
 mock==2.0.0
 olefile==0.44
 pbr==1.10.0
-Pillow==4.0.0
+Pillow==9.0.0
 protobuf==3.6.1
 PyYAML==3.12
 six==1.10.0
